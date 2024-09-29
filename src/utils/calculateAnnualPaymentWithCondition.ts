@@ -125,8 +125,11 @@ export function yearlyTotalPayment(
   programOrPackage: Package | ALevelProgram,
   date: DateObject
 ) {
-  const yearlyTotalPayment =
-    calculateUpFrontPayment(selectedSubjects, programOrPackage, date) + 200;
+  const yearlyTotalPayment = calculateUpFrontPayment(
+    selectedSubjects,
+    programOrPackage,
+    date
+  );
   return yearlyTotalPayment;
 }
 
@@ -137,7 +140,6 @@ export function monthlyTotalPayment(
 ) {
   const monthlyTotalPayment =
     calculateMonthlyPayment(selectedSubjects, programOrPackage) +
-    calculateDepositFee(selectedSubjects, programOrPackage, date) +
-    200;
+    calculateDepositFee(selectedSubjects, programOrPackage, date);
   return monthlyTotalPayment;
 }

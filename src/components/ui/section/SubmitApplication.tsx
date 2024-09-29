@@ -214,7 +214,6 @@ const SubmitApplication: React.FC<SubmitApplicationProps> = ({
               selectedPackage,
               date
             ).toFixed(2)),
-      registrationFee: 200,
     };
 
     setLoading(true);

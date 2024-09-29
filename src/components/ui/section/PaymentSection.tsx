@@ -69,12 +69,6 @@ const PaymentSection: React.FC<PaymentSectionProps> = ({
               )}
             </div>
           </div>
-          <div className="py-2 flex justify-between">
-            <NormalLightText text={"Registration Fee"} />
-            <div className="text-right">
-              {selectedPackage && <NormalText text={"£200.00"} />}
-            </div>
-          </div>
         </>
       ) : (
         <>
@@ -104,12 +98,6 @@ const PaymentSection: React.FC<PaymentSectionProps> = ({
                   ).toFixed(2)}`}
                 />
               )}
-            </div>
-          </div>
-          <div className="py-2 flex justify-between">
-            <NormalLightText text={"Registration Fee"} />
-            <div className="text-right">
-              {selectedPackage && <NormalText text={`£200.00`} />}
             </div>
           </div>
         </>

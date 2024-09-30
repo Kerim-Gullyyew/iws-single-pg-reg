@@ -270,7 +270,8 @@ const SubmitApplication: React.FC<SubmitApplicationProps> = ({
 
       try {
         const response = await axios.post(
-          "https://api.main.iwsonlineschool.co.uk/create-checkout-session-mainstream",
+          "https://api.main.iwsonlineschool.co.uk/create-checkout-session-enrol",
+          // "http://localhost:3500/create-checkout-session-mainstream",
           {
             // const response = await axios.post('https://api.summer-enrol.iwsonlineschool.co.uk/create-checkout-session', {
             // const response = await axios.post('http://192.168.1.101:3500/create-checkout-session', {

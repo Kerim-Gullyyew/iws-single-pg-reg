@@ -18,7 +18,7 @@ const PhoneNumber: React.FC<PhoneNumberProps> = ({
       country={"gb"}
       value={value}
       onChange={(phone) => onChange(phone)}
-      disableDropdown
+      // disableDropdown
       inputStyle={{
         fontSize: "16px",
         width: "100%",
